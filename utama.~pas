@@ -49,7 +49,7 @@ begin
   Hasil:=Nilai.Text;
   Hasil:=StringReplace(Hasil,',','',[rfReplaceAll,rfIgnoreCase]);
   Hasil:=StringReplace(Hasil,'.','',[rfReplaceAll,rfIgnoreCase]);
-  Result:=Hasil;
+  Result:= StrToInt(Hasil);
 end;
 
 procedure TForm1.edtotalChange(Sender: TObject);

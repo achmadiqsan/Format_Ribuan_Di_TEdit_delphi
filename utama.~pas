@@ -44,7 +44,7 @@ end;
 
 Function HapusFormat(Nilai:TEdit):Integer;
 var
-  Hasil:integer;
+  Hasil:String;
 begin
   Hasil:=Nilai.Text;
   Hasil:=StringReplace(Hasil,',','',[rfReplaceAll,rfIgnoreCase]);
